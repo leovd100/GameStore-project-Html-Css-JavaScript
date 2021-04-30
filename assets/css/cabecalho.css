@@ -1,0 +1,19 @@
+
+#container__cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #020729;   
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0) inset;
+    padding: 2em;
+}
+
+
+.cabecalho__logo img{
+    width: 8rem;
+}
+
+.cabecalho__menu{
+    margin-right: 30px;
+}

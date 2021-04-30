@@ -1,0 +1,95 @@
+@media (min-width: 0px ){
+        
+    .menu__nav___lista li, 
+    .conteudo__imagemJogo, 
+    .imageCity,
+    .conteudo__sobre button {
+        display: none;        
+    }
+
+    #container__cabecalho{
+        position: relative;
+    }
+
+    #btn{
+        display: block;
+        background-color: rgb(243, 0, 0);
+    
+        border:none;
+        color: white;
+        position: fixed;
+        top: 50px;
+        right: 20px;
+        padding: 1rem;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    #btn.active{
+        transform: translateX(-180px);
+    }
+    
+    #btn:hover{
+        cursor: pointer;
+    }
+    
+
+    .cabecalho__logo img{
+        width: 6rem;
+    }    
+    
+    #container__conteudo{
+        color: wheat;
+        background:url('../imagem/citymobile.jpg');
+        background-size: 100%;
+        box-shadow: 0px 0px 15px 0 black;
+        align-items: flex-end;
+    }
+
+    .conteudo__sobre{
+        width: 100%;       
+        padding: 0;
+    }
+    
+    .conteudo__sobre__texto{
+        background: rgba(0, 0, 0, .8);    
+    }
+
+    
+    
+
+}
+
+@media (min-width: 700px){
+    
+    .menu__nav___lista li, 
+    .conteudo__imagemJogo, 
+    .imageCity,
+    .conteudo__sobre button {
+        display: inline-block;
+        
+    }
+
+
+    #container__conteudo{
+        background:url('../imagem/watchlogo.jpg');
+        background-position-x: 130px;
+        background-position-y: -125px ;
+        background-size: 980px;
+        box-shadow: 0px 0px 8px 0 black;
+        align-items: center;
+
+    }
+
+    .conteudo__sobre{
+        width: 300px;
+        padding: 2rem;
+    }
+    .conteudo__sobre__texto{
+        background: none;    
+    }
+
+    #btn{
+        display: none;
+    }
+   
+}

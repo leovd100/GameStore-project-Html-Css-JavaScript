@@ -1,0 +1,18 @@
+
+.menu__nav___lista{
+    display: flex;
+}
+.menu__nav___lista li{
+    font-weight: 700;
+    color: white;
+    font-size: 1.3rem;
+    list-style: none;
+    margin-left: 2rem;
+    transition: .5s ease-in-out;
+}
+
+.menu__nav___lista li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: rgb(8, 194, 207);
+}
