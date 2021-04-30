@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+#container__cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgb(37, 4, 97);   
+    color: white;
+
+    box-shadow: 0px 0px 10px 0px black;
+    padding: 2.5em;
+}
+
+
+.cabecalho__menu{
+    margin-right: 30px;
+}
+.menu__nav___lista{
+    display: flex;
+}
+
+
+.menu__nav___lista li{
+    list-style: none;
+    margin-left: 2rem;
+    font-weight: 400;
+    transition: .8s ease-in-out;
+}
+
+.menu__nav___lista li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: rgb(8, 194, 207);
+
+}
+
+
+
+/* Conteudo */
+
+#container__conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 10px;
+    height: 15rem;
+    align-items: center;
+    position: relative;
+    color: wheat;
+    background-color: black;
+}
+
+
+
+
+
+.conteudo__sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    width: 100%;
+}
+.conteudo__sobre h2{
+    font-size: 39px;
+    text-align: center;
+    
+}
+.conteudo__imagemJogo{
+    width: 400px;
+    height: 330px;
+    
+    position: absolute;
+    right: 10%;
+    bottom: 1%;
+}
+#container__conteudo button{
+    margin-top: 2rem;
+    width: 180px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px rgb(3, 255, 3);
+    height: 40px;
+}
+
+#container__conteudo button:hover{
+    cursor: pointer;
+}
