@@ -25,5 +25,66 @@
     z-index: 0;
     background: url('../imagem/citywat.jpg');
 }
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.5rem;
+    
+}
+
+.container__produto{
+    border-radius: 10px;
+    display: block;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px 0px black;    
+    padding: 25px;
+    margin-left: 40px;
+    transition: transform .8s ease-in-out;
+}
+
+.container__produto:hover{
+    box-shadow: 0 0 10px 0px rgb(30, 255, 0) ;    
+    transform: translateY(-20px);
+}
+
+.container__produto img{
+    width: 25vh;
+    border-radius: 10px;
+}
+
+.container__produto___info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 22px;
+}
+
+.container__produto___info .info__preco{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
 
 
+.container__produto___info .info__compra{
+    margin-top: 1rem ;
+    width: 80%;
+    height: 2rem;
+    border-radius: 8px;
+    background-color: orangered;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 0 5px 0 black;
+    transition: background 1s ease-in-out;
+}
+
+
+.info__compra:hover{
+    background-color: rgb(243, 200, 6);
+    cursor: pointer;
+    
+}
