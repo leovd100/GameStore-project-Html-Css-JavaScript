@@ -36,14 +36,19 @@
     .cabecalho__logo img{
         width: 6rem;
     }    
-    
+
+    .teste__options{
+       
+        background:url('../imagem/citymobile.jpg');
+        background-size: 100% ;
+    }
+        
     #container__conteudo{
         color: wheat;
-        background:url('../imagem/citymobile.jpg');
-        background-size: 100%;
         box-shadow: 0px 0px 15px 0 black;
         align-items: flex-end;
     }
+
 
     .conteudo__sobre{
         width: 100%;       
@@ -62,8 +67,7 @@
 @media (min-width: 700px){
     
     .menu__nav___lista li, 
-    .conteudo__imagemJogo, 
-    .imageCity,
+    .conteudo__imagemJogo,
     .conteudo__sobre button {
         display: inline-block;
         
@@ -71,15 +75,40 @@
 
 
     #container__conteudo{
+        
+        box-shadow: 0px 0px 8px 0 black;
+        align-items: center;
+        position: relative;
+    }
+
+    .teste__options{
+        background:url('../imagem/watchlogo.jpg');
+        background-position-x: -300px;
+        background-position-y: -125px ;
+        background-size: 950px;
+        
+    }
+
+    .conteudo__sobre{
+        display: none;
+    }
+
+    .imageCity{
+        right: -5px;
+        display: inline;
+        right: -30px;
+        position: absolute;
+    }
+
+
+
+    /* .teste__options{
         background:url('../imagem/watchlogo.jpg');
         background-position-x: 130px;
         background-position-y: -125px ;
         background-size: 980px;
-        box-shadow: 0px 0px 8px 0 black;
-        align-items: center;
-
-    }
-
+        
+    } */
     .conteudo__sobre{
         width: 300px;
         padding: 2rem;
@@ -92,4 +121,68 @@
         display: none;
     }
    
+}
+
+
+
+
+@media (min-width: 1000px){
+    .conteudo__sobre{
+        display: block;
+    }
+
+
+
+
+    .imageCity{
+        width: 580px;
+        height: 255px;
+        transform: translate(36px, -8px);
+        clip-path: polygon(38% 0, 100% 0%, 100% 100%, 0% 100%);
+        z-index: 0;
+        background: url('../imagem/citywat.jpg');
+    }
+
+    .teste__options{
+        background:url('../imagem/watchlogo.jpg');
+        background-position-x: -50px;
+        background-position-y: -125px ;
+        background-size: 950px;
+        
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1102px){
+    .conteudo__sobre{
+        display: block;
+    }
+
+
+
+
+    .imageCity{
+        width: 580px;
+        height: 255px;
+        transform: translate(36px, -8px);
+        clip-path: polygon(38% 0, 100% 0%, 100% 100%, 0% 100%);
+        z-index: 0;
+        background: url('../imagem/citywat.jpg');
+    }
+
+    .teste__options{
+        background:url('../imagem/watchlogo.jpg');
+        background-position-x: 10px;
+        background-position-y: -125px ;
+        background-size: 980px;
+        
+    }    
 }

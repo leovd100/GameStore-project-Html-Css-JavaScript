@@ -1,21 +1,19 @@
 #container__conteudo{
-    display: flex;
+    align-items: center;
     flex-direction: row;
+    display: flex;
     justify-content: space-between;
     margin-top: 1rem;
     padding: 10px;
     height: 15rem;
-    align-items: center;
     position: relative;
-    color: wheat;
-    background:url('../imagem/watchlogo.jpg');
-    background-position-x: 130px;
-    background-position-y: -125px ;
-    background-size: 980px;
-    background-repeat: no-repeat;
+    color: wheat; 
     background-color: black;
     box-shadow: 0px 0px 8px 0 black;
 }
+
+
+
 
 .conteudo__sobre{
     display: flex;
