@@ -69,7 +69,7 @@
     .menu__nav___lista li, 
     .conteudo__imagemJogo,
     .conteudo__sobre button {
-        display: inline-block;
+        display: block;
         
     }
 
@@ -86,7 +86,7 @@
         background-position-x: -300px;
         background-position-y: -125px ;
         background-size: 950px;
-        
+        background-repeat: no-repeat;
     }
 
     .conteudo__sobre{
@@ -94,10 +94,17 @@
     }
 
     .imageCity{
-        right: -5px;
+       
         display: inline;
-        right: -30px;
+        
         position: absolute;
+        
+        width: 580px;
+        height: 255px;
+        transition: right 2s ease-in-out;
+        clip-path: polygon(38% 0, 100% 0%, 100% 100%, 0% 100%);
+        z-index: 0;
+        
     }
 
 
@@ -132,20 +139,9 @@
     }
 
 
-
-
-    .imageCity{
-        width: 580px;
-        height: 255px;
-        transform: translate(36px, -8px);
-        clip-path: polygon(38% 0, 100% 0%, 100% 100%, 0% 100%);
-        z-index: 0;
-        background: url('../imagem/citywat.jpg');
-    }
-
     .teste__options{
         background:url('../imagem/watchlogo.jpg');
-        background-position-x: -50px;
+        background-position-x: -5 0px;
         background-position-y: -125px ;
         background-size: 950px;
         

@@ -10,21 +10,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
-
+html {
+    overflow: hidden;
+   }
 /* Conteudo */
 #btn{
     display: none;
 }
-.imageCity{
-    
-    width: 580px;
-    height: 255px;
-    transform: translate(36px, -8px);
-    clip-path: polygon(38% 0, 100% 0%, 100% 100%, 0% 100%);
-    z-index: 0;
-    background: url('../imagem/citywat.jpg');
-}
+
 .produtos{
     display: flex;
     flex-wrap: wrap;
@@ -86,5 +79,9 @@
 .info__compra:hover{
     background-color: rgb(243, 200, 6);
     cursor: pointer;
+    
+}
+.imageCity{
+    transition: 2s ease-in-out;
     
 }

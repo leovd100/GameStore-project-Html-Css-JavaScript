@@ -10,6 +10,7 @@
     color: wheat; 
     background-color: black;
     box-shadow: 0px 0px 8px 0 black;
+
 }
 
 
@@ -49,19 +50,33 @@
 
 
 .conteudo__imagemJogo{
-    width: 400px;
+    width: 380px;
     height: 330px;
     z-index: 1;
     position: absolute;
     right: 11%;
     bottom: 0%;
-    display: inline-block;
-    animation-name: imagemPropraganda;
-    animation-duration: 11s ;
+    opacity: 0;
+    display: block;
+    transition: opacity 4s ease-in-out;
+    animation: imagemPropraganda 40s infinite;
+    
+   
+    
 }
 
 @keyframes imagemPropraganda {
-    from   {right: 2%;}
-    to  {right: 11%;}
+    0%   {right: 2%;
+            opacity: 0;    }
+            
+    50%  {right: 11%;
+            opacity: 1;}
+
+
+    100%{
+        opacity: 0;
+        right: 2%;
+    }
 }
+
 
